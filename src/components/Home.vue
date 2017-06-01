@@ -1,6 +1,6 @@
 <template>
-	<el-row :gutter="10">
-	我是主页
+	<el-row :gutter="10" id="content">
+		<!-- 这里存放路由的主视图 -->
 		<router-view></router-view>
 	</el-row>
 </template>
@@ -17,9 +17,9 @@ export default {
 
 </script>
 
-<style>
+<style scoped lang="scss">
 	#content {
       width: 100%;
-      height: 100%; 
     }
+
 </style>

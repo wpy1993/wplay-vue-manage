@@ -4,11 +4,11 @@
 
 <script>
 	export default {
-		name: 'Router1.vue',
+		name: 'Router-a.vue',
 		data () {
 			// 子组件的data需要是函数并且return出来一个对象
 			return {
-				msg: 'this is a router1.vue'
+				msg: 'this is a router-a.vue'
 			}
 			
 		}
