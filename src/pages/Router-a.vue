@@ -4,7 +4,8 @@
 
 <script>
 	export default {
-		name: 'Router-a.vue',
+		// 只能存在字亩和连词符-
+		name: 'Router-a',
 		data () {
 			// 子组件的data需要是函数并且return出来一个对象
 			return {

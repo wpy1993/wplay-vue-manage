@@ -1,5 +1,5 @@
 <template>
-	<el-row :gutter="10" id="content">
+	<el-row id="content">
 		<!-- 这里存放路由的主视图 -->
 		<router-view></router-view>
 	</el-row>
@@ -20,6 +20,7 @@ export default {
 <style scoped lang="scss">
 	#content {
       width: 100%;
+      margin-top: 5px;
     }
 
 </style>
