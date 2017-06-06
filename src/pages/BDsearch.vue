@@ -36,9 +36,20 @@
 					console.log(err);
 					console.log(errcode);
 				})*/
-				this.$axios.get('https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=' + this.msg).then(function (res) {
-					console.log(res)
+				/*this.$axios.get(
+					'https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=' + this.msg + '&cb=precb'
+				)*/
+				this.$axios({
+					method: 'get',
+					url: 'https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=' + this.msg + '&cb=precb',
+					responseType: 'jsonp',
+					headers: {'contentType': ''}
 				})
+
+				function precb (res) {
+					console.log(res)
+				}
+
 			},
 			presearch() {
 				console.log(this.msg);

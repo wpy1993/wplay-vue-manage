@@ -13,10 +13,13 @@ import TMsearch from '../pages/TMallSearch.vue'
 import Hackbg from '../pages/HackBg.vue'
 
 import page1 from '../pages/page1.vue'
-import 	page2 from '../pages/page2.vue'
+import page2 from '../pages/page2.vue'
 
 import highcharts from '../pages/highcharts.vue'
 import table from '../pages/table.vue'
+
+import music from '../pages/music.vue'
+import video from '../pages/video.vue'
 
 const routes = [
 	{path: '/BDsearch', component: BDsearch},
@@ -38,6 +41,10 @@ const routes = [
 	{path: '/RouterA', component: RouterA},
 
 	{path: '/hack-bg', component: Hackbg},
+
+	// 音频视频
+	{path: '/music', component: music},
+	{path: '/video', component: video},
 
 	// 导航二：highcharts和table
 	{path: '/highcharts', component: highcharts},

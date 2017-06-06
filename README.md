@@ -15,4 +15,31 @@ npm run dev
 npm run build
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+ps：welcome to my blog [wplay](http://www.cnblogs.com/wplay/)
+
+### basic
+***
+- `vue`
+- `vue-cli`
+- `webpack`
+- `vue-webpack-simple`
+- `ElementUI`
+- `sass`
+- `vue-router`
+- `highcharts`
+
+### 实现的功能
+***
+- [x] UI [elementUI](http://element.eleme.io/#/zh-CN)
+- [x] 路由
+- [x] 图表 [highcharts](https://github.com/weizhenye/vue-highcharts)
+- [x] 表格
+- [ ] 音频
+- [ ] 视频
+- [ ] 百度搜索
+- [ ] 天猫搜索
+
+### 一些有趣的效果
+***
+- [x] 黑客帝国背景 `canvas`

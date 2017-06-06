@@ -14,8 +14,11 @@
 			}
 		},
 		mounted: function () {
-			this.$axios('../../Data/data.txt').then(function (res) {
-				this.msg = res.data;
+			var that = this;
+			this.$axios('../../Data/data.txt').then((res) => {
+				// 麻蛋怎么解决this指向被修改的问题？
+				that.msg = res.data;
+
 			})
 		}
 	}

@@ -14,8 +14,9 @@
 						<el-menu-item index="/RouterA">陪你玩</el-menu-item>
 					</el-menu-item-group>
 					<el-submenu index="">
-						<template slot="title">让你玩</template>
-						<el-menu-item index="">看动漫</el-menu-item>
+						<template slot="title">影音</template>
+						<el-menu-item index="/music">music</el-menu-item>
+						<el-menu-item index="/video">video</el-menu-item>
 					</el-submenu>
 				</el-submenu>
 
@@ -41,10 +42,10 @@
 	export default {
 		methods: {
 			handleOpen(key, keyPath) {
-				console.log(key, keyPath);
+				// console.log(key, keyPath);
 			},
 			handleClose(key, keyPath) {
-				console.log(key, keyPath);
+				// console.log(key, keyPath);
 			}
 		}
 	}
