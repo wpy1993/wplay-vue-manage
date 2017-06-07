@@ -50,6 +50,7 @@ const routes = [
 	{path: '/highcharts', component: highcharts},
 	{path: '/table', component: table},
 
+	{path: '/', redirect: '/hack-bg'},
 	// 原来重定向放在底部也是没有关系的啊
 	{path: '*', redirect: '/defaults'},	
 	{path: '/defaults', component: Defaults}
