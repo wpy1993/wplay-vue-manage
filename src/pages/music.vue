@@ -8,7 +8,9 @@
 	export default {
 		name: 'audio',
 		data() {
-			return;
+			return {
+				
+			};
 		},
 		methods: {
 
