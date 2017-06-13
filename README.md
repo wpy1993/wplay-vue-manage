@@ -39,6 +39,8 @@ ps：welcome to my blog [wplay](http://www.cnblogs.com/wplay/)
 - [ ] 视频
 - [ ] 百度搜索
 - [ ] 天猫搜索
+- [ ] 登录
+- [ ] 注册
 
 ### 一些有趣的效果
 ***
