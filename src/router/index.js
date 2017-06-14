@@ -34,6 +34,9 @@ const routes = [
 	{
 		path: '/LR',
 		component: LR,
+		/*
+		 * 当你把路径放在child里面的时候，会自动识别router-view的层级的
+		 */
 		children: [
 			{
 				// 在children中，如果/login，那么router-link中to="/login"就可用了
@@ -45,10 +48,13 @@ const routes = [
 			{
 				path: '/Register',
 				component: Register
+			},
+			{
+				path: '/',  // 可以取代父级path(这里是/LR)的存在
+				redirect: '/Login'  // 这里只能写path里面的路径，不能写component里面的内容，并且，不能重定向到父级，这里的父级名为"/LR"
+		
 			}
-				
-		]
-			
+		]	
 	},
 	// main页面
 	{
@@ -90,6 +96,8 @@ const routes = [
 	
 	
 	// 原来重定向放在底部也是没有关系的啊
+	// 窝草？这么写，竟然能够识别/defaults，明明是别人家的子层啊
+	{path: '/', redirect: '/hack-bg'},  
 	{path: '*', redirect: '/defaults'},	
 	
 ]

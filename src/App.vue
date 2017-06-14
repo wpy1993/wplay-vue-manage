@@ -3,7 +3,7 @@
     <el-col :span="24">      
         <TopMenu></TopMenu>
      </el-col>
-    <el-col :span="24">
+    <el-col class="main" :span="24">
       <router-view></router-view>
     </el-col>
     
@@ -39,9 +39,19 @@ export default {
     width: 100%;
     min-height: 100%;
   }
+  // 窝草？为啥#app会有边距？只能使用*来去除了。。。
+  * {
+    margin: 0;
+    padding: 0;
+  }
   html, body {
     width: 100%;
-    min-height: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+
+  .main {
+    margin-top: 60px;
   }
 
 </style>
