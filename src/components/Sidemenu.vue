@@ -20,7 +20,7 @@
 					</el-submenu>
 				</el-submenu>
 
-				<el-menu-item index="2.1"><i class="el-icon-menu"></i>导航二</el-menu-item>
+				<el-menu-item index="/pushImg"><i class="el-icon-menu"></i>导航二</el-menu-item>
 
 				<el-submenu index="2">
 					<template slot="title"><i class="el-icon-message"></i>图表和表格</template>

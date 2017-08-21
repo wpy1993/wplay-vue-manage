@@ -18,6 +18,9 @@ import Hackbg from '../pages/HackBg.vue'
 import page1 from '../pages/page1.vue'
 import page2 from '../pages/page2.vue'
 
+// 上传图片
+import PushImg from '../pages/PushImg.vue'
+
 import highcharts from '../pages/highcharts.vue'
 import table from '../pages/table.vue'
 
@@ -84,8 +87,10 @@ const routes = [
 			// 音频视频
 			{path: '/music', component: music},
 			{path: '/video', component: video},
+			// 导航二 ——ElementUI上传图片吧
+			{path: '/pushImg', component: PushImg},
 
-			// 导航二：highcharts和table
+			// ：highcharts和table
 			{path: '/highcharts', component: highcharts},
 			{path: '/table', component: table},
 
